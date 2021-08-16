@@ -49,7 +49,7 @@ body {
 	text-align: center;
 }
 section,header, footer {
-	padding:1rem 2rem 0 2rem;
+	padding:1rem 1rem 0 1rem;
 	position: relative;
 	/*box-shadow: 0 0 1rem rgba(0,0,0,0.2);*/
 	display:block;
@@ -168,9 +168,9 @@ ol li:before {
 .corner {
 	width: 0;
 	height: 0;
-	border-top: 8em solid #ffcc00;
-	border-bottom: 8em solid transparent;
-	border-left: 8em solid transparent;
+	border-top: 4em solid #ffcc00;
+	border-bottom: 4em solid transparent;
+	border-left: 4em solid transparent;
 	position:absolute;
 	right:0;
 	top:0
@@ -178,9 +178,9 @@ ol li:before {
   
   .corner span {
 	position:absolute;
-	top: -6em;
-	width: 6em;
-	left: -6em;
+	top: -3em;
+	width: 3em;
+	left: -3em;
 	text-align: center;
 	font-family: arial;
 	transform: rotate(45deg);
@@ -222,7 +222,7 @@ section .twothirds {
 }
 
 a.social {
-	margin:0 0.25rem;
+	margin:0 0.5rem;
 	display: inline-block;
 	white-space: nowrap;
 }
@@ -232,7 +232,7 @@ nav a:hover img {
 }
 
 .social img {
-	width:1.25rem;
+	width:1.5rem;
 	opacity:0.5;
 }
 
