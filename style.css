@@ -218,8 +218,10 @@ ol li:before {
 }
 
 section .profile {
-	width:100%;
 	border-radius:50%;
+}
+.twothirds img {
+	width:100%;
 }
 
 section .twothirds h3 {
@@ -230,6 +232,7 @@ section .twothirds {
 	font-size:0.9rem;
 	margin:3rem 0;
 	overflow: hidden;
+	position: relative;
 }
 
 a.social {
@@ -272,3 +275,30 @@ header nav {
 	color:white;
 	border-bottom:0.1rem solid white;
 }
+
+.stat {
+	font-size:3rem;
+	font-weight:800;
+}
+
+blockquote {
+	margin: 0;
+	padding: 0 0 0 6rem;
+	position: relative;
+  }
+  blockquote:before {
+	color: #ccc;
+	content: '\201C';
+	font-size: 10em;
+	display:block;
+	position: absolute;
+	left:0;
+	top:-1rem;
+	line-height: 1;
+  }
+
+  .source {
+	  font-style: italic;
+	  text-align: right;
+	  padding:1rem 0;
+  }
