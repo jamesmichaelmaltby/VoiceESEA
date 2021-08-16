@@ -302,3 +302,69 @@ blockquote {
 	  text-align: right;
 	  padding:1rem 0;
   }
+
+
+  iframe {
+	  width:100%;
+	  height:50vh;
+	  border:0;
+  }
+
+
+
+  svg {
+	display: inline-block;
+	width:100%;
+}
+path { fill: #444;}
+path:hover {
+	stroke:#444;
+}
+#Avon_Somerset { fill:hsl(0,79%,80%) }
+#Bedfordshire { fill:hsl(0,18%,80%) }
+#Cambridgeshire { fill:hsl(0,13%,80%) }
+#Cheshire { fill:hsl(0,43%,80%) }
+#City { fill }
+#Cleveland { fill:hsl(0,75%,80%) }
+#Cumbria { fill:hsl(0,58%,80%) }
+#Derbyshire { fill:hsl(240,42%,80%) }
+#Devon_Cornwall { fill:hsl(0,80%,80%) }
+#Dorset { fill:hsl(240,34%,80%) }
+#Durham { fill:hsl(0,6%,80%) }
+#Essex { fill }
+#Gloucestershire { fill:hsl(240,6%,80%) }
+#Greater_Manchester { fill:hsl(240,26%,80%) }
+#Hampshire { fill:hsl(240,3%,80%) }
+#Humberside { fill }
+#Hertfordshire { fill:hsl(0,45%,80%) }
+#Kent { fill:hsl(0,75%,80%) }
+#Lancashire { fill:hsl(240,18%,80%) }
+#Leicestershire { fill:hsl(0,33%,80%) }
+#Lincolnshire { fill:hsl(0,90%,80%) }
+#Merseyside { fill:hsl(0,29%,80%) }
+#Metropolitan { fill:hsl(0,39%,80%) }
+#Norfolk { fill:hsl(240,25%,80%) }
+#North_Yorkshire { fill:hsl(0,50%,80%) }
+#Northamptonshire { fill:hsl(0,216%,80%) }
+#Northumbria { fill:hsl(0,33%,80%) }
+#Nottinghamshire { fill:hsl(0,35%,80%) }
+#South_Yorkshire { fill:hsl(0,66%,80%) }
+#Suffolk { fill }
+#Staffordshire { fill }
+#Surrey { fill:hsl(240,2%,80%) }
+#Sussex { fill:hsl(0,33%,80%) }
+#Thames_Valley { fill:hsl(0,36%,80%) }
+#Warwickshire { fill:hsl(240,25%,80%) }
+#West_Mercia { fill:hsl(0,4%,80%) }
+#West_Midlands { fill:hsl(0,27%,80%) }
+#West_Yorkshire { fill:hsl(0,52%,80%) }
+#Wiltshire { fill }
+#Dyfed-Powys { fill:hsl(0,87%,80%) }
+#Gwent { fill }
+#North_Wales { fill:hsl(240,20%,80%) }
+#South_Wales { fill:hsl(0,140%,80%) }
+#Northern_Ireland { fill }
+#Scotland { fill:hsl(0,6%,80%) }
+#British_Transport { fill:hsl(0,53%,80%) }
+#Civil_Nuclear { fill:hsl(240,0%,80%) }
+#Ministry_of_Defence { fill:hsl(240,0%,80%) }
