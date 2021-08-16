@@ -215,8 +215,12 @@ section .profile {
 	border-radius:50%;
 }
 
+section .twothirds h3 {
+	margin:0;
+}
+
 section .twothirds {
-	font-size:0.8rem;
+	font-size:0.9rem;
 	margin:3rem 0;
 	overflow: hidden;
 }
