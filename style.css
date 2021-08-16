@@ -85,7 +85,7 @@ header {
 
 .logo {
 	width:15rem;
-	padding:3rem 0 2rem 0;
+	padding:1.5rem 0 1.5rem 0;
 }
 
 button,a.button {
@@ -98,6 +98,9 @@ button,a.button {
 	display: inline-block;
 	/*box-shadow: 0 0 1rem rgba(0,0,0,0.2);*/
 	transition: color 0.2s ease, background 0.2s ease;
+
+	background: black;
+	color: rgb(241, 235, 225);
 }
 
 button:hover,
@@ -243,7 +246,25 @@ nav a:hover img {
 
 
 nav {
+	padding-top:1rem;
 	text-align: center;
 	white-space: nowrap;
 	padding-bottom:2rem;
+}
+
+header nav {
+	padding-top:4rem;
+}
+
+#call {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	z-index:10000;
+	border-radius: 0;
+	box-shadow:0 0 1rem rgba(0,0,0,0.2);
+	padding:1rem 2rem;
+	color:white;
+	border-bottom:0.1rem solid white;
 }
