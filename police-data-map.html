@@ -831,7 +831,7 @@ Northern Ireland: 81.81% (11 reported instances in 2019 and 20 reported instance
             }
 
             tmp = document.createElement('div');
-            tmp.innerHTML = item.region.trim() + " – " + percent;
+            tmp.innerHTML = item.region.trim() + ": " + percent;
             tmp.className = "keyRow";
             tmp.style.background = c;
             tmp.style.color = (c == no_data_colour) ? 'black' : 'white';
