@@ -369,9 +369,9 @@ blockquote {
 	animation-delay: 1s;
  }
 
-path { fill: #111; stroke:#aaa;}
+path { fill: #111; stroke:#ddd;}
 path:hover {
-	stroke:#ddd;
+	stroke:#000;
 }
 
 
@@ -394,6 +394,11 @@ footer>a {
 	display:block;
 }
 
+
+svg {
+	width:100%;
+}
+
 @media only screen and (min-width: 1024px) {
 	
 	.mobile-break {
@@ -410,6 +415,10 @@ footer>a {
 
 	.mobile-break .social {
 		margin-top:0;
+	}
+
+	svg {
+		width:20rem;
 	}
 	
 }
