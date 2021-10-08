@@ -80,8 +80,9 @@ header {
 	display: block;
 	text-align: left;
 	max-width:1366px;
-	margin:0 auto;
+	margin:0 auto 1rem auto;
 	overflow: hidden;
+
 }
 
 .section-primary {
@@ -407,7 +408,6 @@ footer>a {
 
 svg {
 	width:100%;
-	margin-bottom:2rem;
 }
 
 #key {
