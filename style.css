@@ -373,3 +373,42 @@ path { fill: #111; stroke:#aaa;}
 path:hover {
 	stroke:#ddd;
 }
+
+
+.mobile-break {
+	clear:both;
+	display:block;
+}
+
+.mobile-break .social {
+	margin-top:1rem;
+}
+
+header>a {
+	display: block;
+}
+
+
+footer>a {
+	display:block;
+}
+
+@media only screen and (min-width: 1024px) {
+	
+	.mobile-break {
+		display: inline-block;
+	}
+
+	header>a {
+		display:inline;
+	}
+
+	footer>a {
+		display:inline;
+	}
+
+	.mobile-break .social {
+		margin-top:0;
+	}
+	
+}
