@@ -34,9 +34,10 @@ h1,h2 {
 }
 
 html {
-	font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+	/*font-size: calc(16px + 6 * ((100vw - 320px) / 680));*/
 	-webkit-font-smoothing:antialiased;
 	text-rendering: optimizeLegibility;
+	font-size:28px;
 }
 
 body, p, input, button {
@@ -50,17 +51,36 @@ body {
 }
 body,html {
 	background:rgb(82, 107, 118);
+	/*background:#eee;*/
 }
 
 section,header, footer {
-	padding:1rem 1rem 2rem 1rem;
+	padding:1rem 1rem 0 1rem;
 	position: relative;
 	/*box-shadow: 0 0 1rem rgba(0,0,0,0.2);*/
 	display:block;
 	overflow: hidden;
+	visibility: hidden;
 }
 header {
-	
+	text-align: center;
+	width:320px;
+}
+
+header p {
+	font-size:0.45rem;
+	text-align: left;;
+	clear:both;
+	color:#eee;
+	z-index: 999;
+}
+
+footer {
+	position: fixed;
+	bottom:0.5rem;
+	right:0;
+	font-size:0.45rem;
+	color:#eee;
 }
 
 .wrap, nav {
@@ -88,8 +108,9 @@ header {
 }
 
 .logo {
-	width:12rem;
-	padding:1.5rem 0 1.5rem 0;
+	width:8rem;
+	padding-top:0.5rem;
+	padding-bottom:0.5rem;
 }
 
 button,a.button {
@@ -254,13 +275,14 @@ nav a:hover img {
 
 nav {
 	padding-top:1rem;
-	text-align: center;
+	text-align: left;
 	white-space: nowrap;
 	padding-bottom:2rem;
 }
 
 header nav {
-
+	padding:0;
+	text-align: left;
 }
 
 #call {
@@ -282,7 +304,7 @@ header nav {
 }
 
 blockquote {
-	margin: 1rem 0 0 0;
+	margin: 0;
 	padding: 0 0 0 5rem;
 	position: relative;
   }
@@ -308,13 +330,24 @@ blockquote {
 	  width:100%;
 	  height:50vh;
 	  border:0;
-  }
+  } 
 
-
+.share {
+	position: fixed;
+	right:1rem;
+	top:0.5rem;
+	z-index:9999999;
+}
 
   svg {
 	display: inline-block;
-	width:75%;
+	height:90%;
+	width:80%;
+	padding:5%;
+		position:fixed;
+		top:0;
+		bottom:0;
+		right:0;
 }
 
 @keyframes fadeIn {
