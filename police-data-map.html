@@ -83,7 +83,7 @@
     </header>
 
     <section class="section-secondary">
-        <div class="wrap">
+        <div class="widewrap">
             <h2>Police Data Project</h2>
             
             <center>
@@ -604,7 +604,13 @@
            c0.28,0.15,0.76,0.28,1.07,0.59C83.83,249.6,85.96,251.38,83.96,254.47z"/>
         
         </svg>
+        <div id="key">
+         
+        </div>
+
       </center>
+      </div>
+      <div class="wrap">
 
 <p>      Reported figures relating to hate crimes and/or incidents*</p>
 
@@ -786,7 +792,11 @@ Northern Ireland: 81.81% (11 reported instances in 2019 and 20 reported instance
         '#0000ff',
     ]
     
-    
+    const inv = (hex) => '#' + hex.match(/[a-f0-9]{2}/ig).map(e => (255 - parseInt(e, 16) | 0).toString(16).replace(/^([a-f0-9])$/, '0$1')).join('')
+
+    data.sort(function(a, b){
+       return b.percentage-a.percentage
+    });
     data.forEach( function(item, index) {
         var key = item.region;
         key = key.replace(' and ',' ');
@@ -799,20 +809,35 @@ Northern Ireland: 81.81% (11 reported instances in 2019 and 20 reported instance
         key = key.trim();
         key = key.replace(' ','_')
         var element = document.getElementById(key);
+        var keydiv = document.getElementById("key");
+        var tmp;
         if(element) {
             element.dataset.name = item.region.trim();
             element.dataset.value = item.percentage;
-            element.style['animation-delay'] = index*50 +'ms';
+            // element.style['animation-delay'] = index*50 +'ms';
             
             var data = Math.round(Math.abs(item.percentage) * 100/50);
             
-            var c = 'white';
             if(element.dataset.value  == 0) c = no_data_colour;
             else if(element.dataset.value > 0) c = increase_colours[data];
             else c = decrease_colours[data];
             element.style.fill = c;
+
+
+            if( item.percentage == 0 ) {
+               percent = "No data";
+            } else {
+               percent = (item.percentage*100).toFixed(2) + "%";
+            }
+
+            tmp = document.createElement('div');
+            tmp.innerHTML = item.region.trim() + " – " + percent;
+            tmp.className = "keyRow";
+            tmp.style.background = c;
+            tmp.style.color = (c == no_data_colour) ? 'black' : 'white';
+            keydiv.appendChild(tmp);
+
         }
-        console.log(key,item.percentage);
     });
     
     tippy('path', {
