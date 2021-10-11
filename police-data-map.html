@@ -746,6 +746,8 @@ gtag('config', 'G-8K9BS1HHHM');
                 61.54% (13 reported instances in 2019 and 21 reported instances in 2020)
             </li>
         </ul>
+
+        <img style="margin:1rem;box-shadow:0 0 1rem rgba(0,0,0,0.25)" src="images/chart.jpg"/>
         <p>
             If you require assistance with hate crime, please see resources on Protection Approaches <a href="https://protectionapproaches.org/hate-crime">here</a> available in multiple ESEA languages.
         </p>
@@ -1002,7 +1004,7 @@ gtag('config', 'G-8K9BS1HHHM');
         if(element) {
             element.dataset.name = item.region.trim();
             
-            // element.style['animation-delay'] = index*50 +'ms';
+            // element.style['animation-delay'] = (index+1)*350 +'ms';
             
             var data = Math.round(Math.abs(item.percentage) * 100/50);
             
@@ -1032,6 +1034,7 @@ gtag('config', 'G-8K9BS1HHHM');
             tmp.innerHTML = item.region.trim() + ": " + percent;
             tmp.className = "keyRow";
             tmp.style.background = c;
+            // tmp.style['animation-delay'] = (index+1)*350 +'ms';
             tmp.style.color = (c == no_data_colour) ? 'black' : 'white';
             keydiv.appendChild(tmp);
 

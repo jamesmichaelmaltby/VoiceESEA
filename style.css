@@ -372,7 +372,7 @@ blockquote {
 	100% {opacity: 1;}
  } 
 
- path, .share {
+ path, .share, .keyRow {
 	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
 	-webkit-animation-duration: 0.5s;
@@ -459,3 +459,8 @@ svg {
 	}
 }
 
+
+
+h2 {
+	font-size:1rem !important;
+}
