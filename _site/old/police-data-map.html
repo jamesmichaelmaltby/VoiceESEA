@@ -1,75 +1,69 @@
 <!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en">
-<head>
-   <link rel="stylesheet" href="normalize.css" />
-   <link rel="stylesheet" href="style.css?timestamp=6" />
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap" rel="stylesheet">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">		
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="style.css?timestamp=6" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap" rel="stylesheet">
+   
 
+        <!-- Document Meta -->
+        <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+        <meta charset="utf-8">
 
-   <!-- Document Meta -->
-   <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
-   <meta charset="utf-8">
+        <!-- Page Meta -->
+        <title>
+            Voice ESEA
+        </title>
+        <meta name="description" content="Voice ESEA">
+        <meta name="robots" content="index, follow">
+     
+        <base href="">
+        <link rel="canonical" href="/"/>
 
-   <!-- Page Meta -->
-   <title>Voice ESEA - Police Data Map</title>
-   <meta property="og:title" content="Voice ESEA - Police Data Map"/>
-   <meta property="og:description" content="Interactive visualisation of police data on ESEA hate crime"/>
-   <meta name="description" content="Interactive visualisation of police data on ESEA hate crime"/>
-   <link rel="canonical" href="/police-data-map"/>
-   <meta itemprop="url" content="/police-data-map"/>
-   <meta property="og:url" content="/police-data-map"/>
+        <!-- Mobile Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-   <!-- Base Meta -->
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-   <base href="https://www.voiceesea.com"/>
-   <meta name="robots" content="index, follow"/>
+        <!-- Browser Meta -->
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
 
-   <!-- Browser Meta -->
-   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
-   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
-   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-   <link rel="manifest" href="/site.webmanifest"/>
-   <meta name="msapplication-TileColor" content="#526b76"/>
-   <meta name="theme-color" content="#526b76"/>
+        <!-- Social Meta -->
+        <meta property="og:type" content="profile" /> 
+        <meta property="og:title" content="Voice ESEA">
+        <meta property="og:description" content="Voice ESEA">
+        <meta property="og:image" content="/thumbnail.jpg">
+        <meta property="og:image:secure_url" content="/thumbnail.jpg" />
+        <link rel="image_src" href="{/thumbnail.jpg" />
 
-   <!-- Social Meta -->
-   <meta property="og:type" content="profile" /> 
-   <meta property="og:image" content="/map.png/">
-   <meta property="og:image:secure_url" content="/map.png" />
-   <link rel="image_src" href="/map.png" />
-   <meta itemprop="name" content="Voice ESEA"/>
-   <meta itemprop="thumbnailUrl" content="/voiceesea.png"/>
-   <meta property="og:image:type" content="image/png" />
-   <meta property="og:image:width" content="1200" />
-   <meta property="og:image:height" content="630" />
-   <meta property="og:site_name" content="Voice ESEA"/>
-   <meta name="twitter:card" content="summary_large_image"/>
-   <meta name="twitter:image:alt" content="Voice ESEA"/>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8K9BS1HHHM"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+        <meta itemprop="name" content="Voice ESEA"/>
+        <meta itemprop="url" content="Voice ESEA"/>
+        <meta itemprop="thumbnailUrl" content="/thumbnail.jpg"/>
 
-gtag('config', 'G-8K9BS1HHHM');
-</script>
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url" content="/">
+        <meta property="og:site_name" content="Voice ESEA">
+        <!-- <meta property="fb:app_id" content="your_app_id" /> -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image:alt" content="Thumbnail">
+
 </head>
 <body>
-   <div id="fb-root"></div>
-   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0" nonce="gIPwxCqs"></script>
-   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
     <header class="section-primary">
        
       <a href="/"><img class="logo" src="images/voice_esea_white_logo.svg"/></a>
       <nav>
       <div class="mobile-break">
-         <a class="links" href="/">Home</a>
+         <a class="links" href="/homepage">Home</a>
       <a class="links" href="team">Team</a>
-      <a class="links" href="volunteer">Volunteer</a>
       <a class="links" href="petition">Petition</a>
       <a class="links active" href="police-data-map">Police Data</a>
       </div>
@@ -77,6 +71,7 @@ gtag('config', 'G-8K9BS1HHHM');
       <a class="links" href="https://www.linkedin.com/pulse/letter-uk-prime-minister-boris-johnson-voice-esea/?trackingId=vQwTkA9%2F%2Bt4RdJaSnyosdA%3D%3D  ">Sewell Report Response</a>
       <a class="links" href="features">Features</a>
       <a class="links" href="resources">Resources</a>
+      <a class="links" href="volunteer">Volunteer</a>
       </div>
       <div class="mobile-break">
       <a class="social" href="https://www.facebook.com/voiceesea/"><img src="images/facebook.svg"/></a>
@@ -90,8 +85,7 @@ gtag('config', 'G-8K9BS1HHHM');
 
     <section class="section-secondary">
         <div class="widewrap">
-
-            <h2>2019-2020 Changes in anti-East and Southeast Asian<br/>Hate Crimes and/or Incidents</h2>
+            <h2>Police Data Project</h2>
             
             <center>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -616,245 +610,66 @@ gtag('config', 'G-8K9BS1HHHM');
         </div>
 
       </center>
-
-
-      <center>
-         <div class="fb-share-button" data-href="https://www.voiceesea.com/police-data-map" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.voiceesea.com%2Fpolice-data-map&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-         <div style="margin-top:.5rem">
-         <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="true">Tweet</a>
-         </div>
-      </center>
-
-
       </div>
       <div class="wrap">
-        <p>
-            Voice ESEA’s Data Team worked with volunteers in identifying and distilling
-            useful information to assist Voice ESEA with its aims of raising awareness
-            and understanding the scope of anti-ESEA discrimination in the UK.
-        </p>
-        <p>
-            Voice ESEA issued Freedom of Information Act 2000 requests to 48 police
-        bodies across the UK to determine the rates of police-reported <strong>hate crime</strong> against ESEAs in 2019 and 2020 in different
-            regions.
-            <a href="https://www.cps.gov.uk/crime-info/hate-crime">
-                Click to find out what a hate crime is
-            </a>
-            .
-        </p>
+
+<p>      Reported figures relating to hate crimes and/or incidents*</p>
+
+
+<p>
+United Kingdom**: 26.42% (2,532 reported instances in 2019 and 3,201 reported instances in 2020)
+</p>
+<p>
+
+England**: 34.17% (1,349 reported instances in 2019 and 1,810 reported instances in 2020)
+</p>
+
+<p>
+
+Wales**: 117.86% (28 reported instances in 2019 and 61 reported instances in 2020)
+</p>
+
+<p>
+Scotland: 13.40% (1,127 reported instances in 2019 and 1,278 reported instances in 2020)
+</p>
+<p>
+Northern Ireland: 81.81% (11 reported instances in 2019 and 20 reported instances in 2020)
+</p>
+ 
+<p>
+*Please note that UK police forces are routinely required to provide crime statistics to government bodies and the recording criteria is set nationally. However, the systems used for recording these figures are not generic, nor are the procedures used locally in capturing the crime data. For example, some of the results captured may use identifier that is simply "Chinese," or may extend to the generic "Asian" category. There may be populations that are ESEA that have not been identified and therefore the figures may be understated for certain regions and in other cases, the category "Asian" used by certain police forces may result in overstated figures when considering the ESEA demographic. In addition, certain police forces were unable to provide figures or usable data. Also, some forces have included non-crime hate incidents in their data.
+</p>
+ 
+<p>
+**We have received warnings from police forces that an individual police force’s response to the relevant questions should not be used for comparison purposes with other responses received. Therefore, where Voice ESEA has produced aggregated figures of our police-reported hate crimes (i.e., for UK, Wales and England), please consider how the inputs contain different identifiers and exercise caution in using the information. Also, except for the United Kingdom, aggregated figures also exclude results from the British Transport Police, Civil Nuclear Constabulary and Ministry of Defence Police.
+</p>
 
         <p>
-            <a
-                href="https://www.weareresonate.com/2021/08/interview-voice-esea-team-talks-collecting-uk-hate-crime-data-and-combating-racism/"
-            >
-                Read interview with our Data Team on Resonate here
-            </a>
+         Voice ESEA’s Data Team worked with volunteers in identifying and distilling useful information to assist Voice ESEA with its aims of raising awareness and understanding the scope of anti-ESEA discrimination in the UK. As part of this, Voice ESEA issued Freedom of Information Act 2000 requests to over 48 police bodies across the UK to determine the rates of police-reported hate crime against ESEAs in 2019 and 2020 in different regions. Some examples include:
         </p>
-        <p>
-            Where data was non-zero for either year, we have provided percentage
-            changes.
-        </p>
-        <p>
-            Where data was 0 for one or both years, we have cited the raw values.
-        </p>
-        <p>
-            The raw data is accessible via
-            <a
-                href="https://drive.google.com/file/d/1lAAwlDg6WUecwj0wRW1g-TkH6n5XvbRm/view"
-            >
-                our full database of findings
-            </a>
-            (subject to terms and conditions of use).
-        </p>
-        <p>
-           <br/>
-        </p>
-        <h3>
-                Missing data
-         </h3>
-        <ul type="disc">
-            <li>
-                Humberside Police could not provide data and provided the explanation
-                as follows: ‘there is no reliable indicator for the victim’s Ethnicity
-                and we don’t record ethnicity in the requested “Relevant Groups”’.
-            </li>
-            <li>
-                Staffordshire Police could not provide usable data as they do not
-                collect data with ethnic identifiers.
-            </li>
-            <li>
-                Civil Nuclear Constabulary and Ministry of Defence Police provided zero
-                reported instances for both 2019 and 2020.
-            </li>
-            <li>
-                Note that City of London Police recorded zero hate reported instances
-                in 2019 but reported 5 instances in 2020.
-            </li>
-            <li>
-                As for Wiltshire Police, they recorded 1 reported instance in 2019 but
-                zero in 2020. Hence, no percentages could be produced for these police
-                forces.
-            </li>
-            <li>
-                British Transport Police: We also obtained results from the British
-                Transport Police which provided that there was an increase of 106.67%
-                between 2019 (15 reported instances) and 2020 (31 reported instances).
-            </li>
-        </ul>
-        <p>
-            <br/>
-            For aggregated national figures, please review the below.*
-        </p>
-        <p>
-            United Kingdom**:
-        </p>
-        <ul type="disc">
-            <li>
-                26.42% (2,532 reported instances in 2019 and 3,201 reported instances in 2020)
-            </li>
-        </ul>
-        <p>
-            England**:
-        </p>
-        <ul type="disc">
-            <li>
-                34.17% (1,349 reported instances in 2019 and 1,810 reported instances
-                in 2020)
-            </li>
-        </ul>
-        <p>
-            Wales**:
-        </p>
-        <ul type="disc">
-            <li>
-                117.86% (28 reported instances in 2019 and 61 reported instances in 2020)
-            </li>
-        </ul>
-        <p>
-            Scotland:
-        </p>
-        <ul type="disc">
-            <li>
-                13.40% (1,127 reported instances in 2019 and 1,278 reported instances in 2020)
-            </li>
-        </ul>
-        <p>
-            Northern Ireland:
-        </p>
-        <ul type="disc">
-            <li>
-                61.54% (13 reported instances in 2019 and 21 reported instances in 2020)
-            </li>
-        </ul>
-
-        <img style="margin:1rem;box-shadow:0 0 1rem rgba(0,0,0,0.25)" src="images/chart.jpg"/>
-        <p>
-            If you require assistance with hate crime, please see resources on Protection Approaches <a href="https://protectionapproaches.org/hate-crime">here</a> available in multiple ESEA languages.
-        </p>
-
-        <div style="font-size:0.4rem">
-           <p><br/></p>
-        <h3>
-           *Guidance notes
-        </h3>
-        <ul type="disc">
-            <li>
-                <strong><em>**Comparing data**:</em></strong>
-                <em>
-                    **We have received notices from police forces that an individual
-                    police force’s response to the relevant questions should not be
-                    used for comparison purposes with other responses received.
-                    However, although police information may come in multiple formats,
-                    the figures may help provide an indication of the prevalence of
-                    hate crimes in certain jurisdictions over others and an overall
-                    picture of the rise in hate crimes in the UK. Nonetheless, where
-                    Voice ESEA has produced aggregated figures of our police-reported
-                    hate crimes (i.e., for UK, Wales and England), please consider how
-                    the inputs contain different identifiers and exercise caution in
-                    using the information. Except for United Kingdom, the aggregated
-                    figures for England, Wales, Scotland and Northern Ireland also
-                    exclude results from the British Transport Police, Civil Nuclear
-                    Constabulary and Ministry of Defence Police.
-                </em>
-            </li>
-        </ul>
-        <ul type="disc">
-            <li>
-                <strong><em>Completeness of data:</em></strong>
-                <em>
-                    These rates may not be reflective of the full scale of figures,
-                    given victims may not wish to report such incidents to the police
-                    for a variety of reasons.
-                </em>
-            </li>
-            <li>
-                <strong><em>Completeness of data:</em></strong>
-                <em>
-                    UK police forces are routinely required to provide crime statistics
-                    to government bodies and the recording criteria is set nationally.
-                    However, the systems used for recording these figures are not
-                    generic, nor are the procedures used locally in capturing the crime
-                    data.
-                </em>
-            </li>
-            <li>
-                <strong><em>Identifying ESEA individuals: </em></strong>
-                <em>
-                    In some cases, the police force has loosely defined its groupings,
-                    for example “Asian” or “any other Asian background”. We have
-                    attempted to focus on the groupings which explicitly include ESEA
-                    identifiers, but this has not been possible in all instances. For
-                    example, some of the results captured may use identifier that is
-                    simply "Chinese," or may extend to the generic "Asian" category.
-                    There may be populations that are ESEA that have not been
-                    identified and therefore the figures may be understated for certain
-                    regions and in other cases, the category "Asian" used by certain
-                    police forces may result in overstated figures when considering the
-                    ESEA demographic.
-                </em>
-                <em></em>
-            </li>
-        </ul>
         <ul>
-            <li>
-                <strong><em>Differences in reporting:</em></strong>
-                <em>
-                    Some police forces have counted both reported hate crimes and hate
-                    incidents (i.e. non-crime hate incidents), whereas others have only
-                    included reported hate crimes.
-                </em>
-            </li>
-        </ul>
-        <p>
-            <em>
-                The data systems used by police forces may be part of a ‘living’ system
-                in that it is constantly being updated. As such the data may only be
-                verifiable in relation to the date/time extracted.
-            </em>
-        </p>
-        <p>
-            <em>
-                The material and information contained on this page is for general
-                information purposes only and has been retrieved and interpreted from
-                the original underlying FOIA request responses received from respective
-                police forces. Voice ESEA cannot guarantee the accuracy, quality,
-                validity, completeness or suitability of the material provided for any
-                particular purpose and such material may be subject to inaccuracies or
-                errors. Voice ESEA does not and will not accept liability for any such
-                inaccuracies or reliance upon such information and shall be under no
-                obligation to notify any person of any error.
-            </em>
-        </p>
-        <p>
-            <em> </em>
-        </p>
-        <p>
-            <em>
-                The material and information contained on this page may be subject to
-                copyright and other laws, as well as the rights of third parties.
-            </em>
-        </p>
-      </div>
+           <li>
+              The London Metropolitan Police recorded a 79.88% jump in reported hate crimes against individuals of “Oriental” background in 2020 compared to 2019 (323 incidents in 2019 and 581 incidents in 2020). In 209 (or 35.97%) of the 581 incidents in 2020, the police report flagged a link to COVID-19.
+           </li>
+           <li>
+               In Cambridgeshire, there was an increase in 21.78% in reported hate crimes against individuals of “Chinese, Japanese or South East Asian” background in 2020 compared to 2019 (18 incidents in 2019 and 23 incidents in 2020). In 2020, 30.4% of these hate crimes included mention of COVID-19.
+           </li>
+           <li>
+               The Avon and Somerset Constabulary provided a response showing an increase of 158.82% in reported hate crimes against individuals of “Chinese, Japanese or South East Asian” background (17 incidents in 2019 and 44 incidents in 2020). 
+           </li>
+         </ul>
+
+         <p>
+            However, note we have many more examples of increases all over the UK and from various police forces. In addition, these rates may not be reflective of the full scale of figures given victims may not wish to report such incidents to the police for a variety of reasons. 
+         </p>
+
+         <p>
+            <a href="https://drive.google.com/file/d/1lAAwlDg6WUecwj0wRW1g-TkH6n5XvbRm/view?usp=sharing">View the full database of findings (please read terms of use prior to accessing the data).</a>
+         </p>
+
+         <p>
+            <a href="https://www.weareresonate.com/2021/08/interview-voice-esea-team-talks-collecting-uk-hate-crime-data-and-combating-racism/">Read interview with our Data Team on Resonate here</a>
+         </p>
 
         </div>
         <div class="corner corner-primary"><span></span></div>
@@ -864,9 +679,8 @@ gtag('config', 'G-8K9BS1HHHM');
       <a href="/"><img class="logo" src="images/voice_esea_white_logo.svg"/></a>
       <nav>
       <div class="mobile-break">
-         <a class="links" href="/">Home</a>
+         <a class="links" href="/homepage">Home</a>
       <a class="links" href="team">Team</a>
-      <a class="links" href="volunteer">Volunteer</a>
       <a class="links" href="petition">Petition</a>
       <a class="links active" href="police-data-map">Police Data</a>
       </div>
@@ -874,6 +688,7 @@ gtag('config', 'G-8K9BS1HHHM');
       <a class="links" href="https://www.linkedin.com/pulse/letter-uk-prime-minister-boris-johnson-voice-esea/?trackingId=vQwTkA9%2F%2Bt4RdJaSnyosdA%3D%3D  ">Sewell Report Response</a>
       <a class="links" href="features">Features</a>
       <a class="links" href="resources">Resources</a>
+      <a class="links" href="volunteer">Volunteer</a>
       </div>
       <div class="mobile-break">
       <a class="social" href="https://www.facebook.com/voiceesea/"><img src="images/facebook.svg"/></a>
@@ -882,9 +697,6 @@ gtag('config', 'G-8K9BS1HHHM');
       <a class="social" href="mailto:voiceesea@gmail.com"><img src="images/email.svg"/></a>
       </div>
       </nav>
-
-    <small>Copyright &copy; Voice ESEA 2021</small>
-    
     </footer>
 </body>
 
@@ -892,16 +704,13 @@ gtag('config', 'G-8K9BS1HHHM');
 <script src="https://unpkg.com/tippy.js@6"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
 <Script>
-   /*
     ScrollReveal().reveal('section .image-wrap',{ viewFactor:0.25, distance: '100%',origin: 'bottom',duration:2000 });
     ScrollReveal().reveal('section li',{ viewFactor:1.0, distance: '100%',origin: 'bottom',duration:2000 });
     ScrollReveal().reveal('section h3',{ viewFactor:1.0, distance: '100%',origin: 'bottom',duration:2000 });
     ScrollReveal().reveal('section h2',{ viewFactor:1.0, distance: '100%',origin: 'bottom',duration:2000 });
     ScrollReveal().reveal('section p',{ viewFactor:1.0, distance: '100%',origin: 'bottom',duration:2000 });
-    ScrollReveal().reveal('section img',{ viewFactor:1.0, distance: '100%',origin: 'bottom',duration:2000 });
     ScrollReveal().reveal('section center a',{ viewFactor:1.0, distance: '100%',origin: 'bottom',duration:2000 });
     ScrollReveal().reveal('section .twothirds',{ viewFactor:0.5, distance: '100%',origin: 'bottom',duration:2000 });
-    */
 </Script><script>
     var data = [
     {'region':'Avon & Somerset Constabulary', 'percentage':1.58823529411765},
@@ -957,32 +766,32 @@ gtag('config', 'G-8K9BS1HHHM');
     
     var no_data_colour = 'rgb(250, 250, 250)';
     var increase_colours = [
-        '#ff9500',
-        '#ff8000',
-        '#ff6a00',
-        '#ff5500',
-        '#ff5500',
-        '#ff4000',
-        '#ff4000',
-        '#ff2b00',
-        '#ff1500',
+        '#440000',
+        '#660000',
+        '#880000',
+        '#aa0000',
+        '#bb0000',
+        '#cc0000',
+        '#dd0000',
+        '#ee0000',
         '#ff0000',
-        '#000',
-        '#000',
-        '#000',
-        '#000',
-        '#000',
-        '#000'
+        '#ff0000',
+        '#ff0000',
+        '#ff0000',
+        '#ff0000',
+        '#ff0000',
+        '#ff0000',
+        '#ff0000'
     ]
     var decrease_colours = [
-        '#ffbf00',
-        '#ffd400',
-        '#ffea00',
-        '#ff00ff',
-        '#ff00ff',
-        '#ff00ff',
-        '#ff00ff',
-        '#ff00ff',
+        '#000044',
+        '#000088',
+        '#0000aa',
+        '#0000bb',
+        '#0000cc',
+        '#0000dd',
+        '#0000ee',
+        '#0000ff',
     ]
     
     const inv = (hex) => '#' + hex.match(/[a-f0-9]{2}/ig).map(e => (255 - parseInt(e, 16) | 0).toString(16).replace(/^([a-f0-9])$/, '0$1')).join('')
@@ -1007,7 +816,7 @@ gtag('config', 'G-8K9BS1HHHM');
         if(element) {
             element.dataset.name = item.region.trim();
             
-            // element.style['animation-delay'] = (index+1)*350 +'ms';
+            // element.style['animation-delay'] = index*50 +'ms';
             
             var data = Math.round(Math.abs(item.percentage) * 100/50);
             
@@ -1037,7 +846,6 @@ gtag('config', 'G-8K9BS1HHHM');
             tmp.innerHTML = item.region.trim() + ": " + percent;
             tmp.className = "keyRow";
             tmp.style.background = c;
-            // tmp.style['animation-delay'] = (index+1)*350 +'ms';
             tmp.style.color = (c == no_data_colour) ? 'black' : 'white';
             keydiv.appendChild(tmp);
 
@@ -1054,25 +862,7 @@ gtag('config', 'G-8K9BS1HHHM');
     
     
     </script>
-<script>
-   /*
-   (function() {
-      if (!localStorage.getItem('cookieconsent')) {
-         document.body.innerHTML += '\
-         <div class="cookieconsent" style="font-size:0.6rem;position:fixed;padding:20px;left:0;right:0;bottom:0;background-color:#000;color:#FFF;text-align:center;z-index:999;">\
-            This site uses cookies. By continuing to use this website, you agree to their use. \
-            <a href="#" style="color:#CCCCCC;">I Understand</a>\
-         </div>\
-         ';
-         document.querySelector('.cookieconsent a').onclick = function(e) {
-            e.preventDefault();
-            document.querySelector('.cookieconsent').style.display = 'none';
-            localStorage.setItem('cookieconsent', true);
-         };
-      }
-   })();
-   */
-   </script>
+
 </body>
 </html>
 
